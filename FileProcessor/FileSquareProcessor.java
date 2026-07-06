@@ -32,8 +32,6 @@ public class FileSquareProcessor implements Runnable {
 
     private void processFile() throws Exception {
         List<Double> numbers = new ArrayList<>();
-
-        // Чтение чисел из входного файла
         try (BufferedReader reader = new BufferedReader(new FileReader(inputFileName))) {
             String line;
             while ((line = reader.readLine()) != null) {
